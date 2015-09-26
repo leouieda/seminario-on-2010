@@ -1,0 +1,2704 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+%\usetheme{Warsaw}
+%\usetheme{Antibes}	% tree outline, neat
+%\usetheme{JuanLesPins}	% like Antibes, with shading
+%\usetheme{Bergen}	% outline on side
+%\usetheme{Luebeck}	% like Warsaw, square sides
+%\usetheme{Berkeley}	% interesting left bar outline
+%\usetheme{Madrid}	% clean, nice.  7/12 page numbers
+%\usetheme{Berlin}	% dots show slide number
+%\usetheme{Malmoe}	% OK, plain, unshaded
+%\usetheme{Boadilla}	% nice, white bg, no top bar
+%\usetheme{Marburg}	% nice, outline on right
+%\usetheme{boxes}	% ???
+%\usetheme{Montpellier}	% tree outline on top, plainish white
+%\usetheme{Copenhagen}	% like Warsaw
+%\usetheme{PaloAlto}	% looks good
+%\usetheme{Darmstadt}	% like Warsaw with circle outline
+%\usetheme{Pittsburgh}
+%\usetheme{default}
+%\usetheme{Rochester}	% like boxy, unshaded warsaw
+%\usetheme{Dresden}	% circle outline on top
+%\usetheme{Singapore}	% purple gradient top
+%\usetheme{Frankfurt}	% like Warsaw with circle outline on top
+%\usetheme{Szeged}
+%\usetheme{Goettingen}	% light purple right bar outline
+%\usetheme{Warsaw}
+%\usetheme{Hannover}	% like Goett with bar on left
+%\usetheme{compatibility}
+%\usetheme{Ilmenau}
+
+%\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+
+%\usecolortheme{seahorse}
+%\usecolortheme{rose}
+
+
+\setbeamercolor{normal text}{fg=white,bg=black}
+\xdefinecolor{mycolor}{rgb}{0.96,1.00,0.49}
+\setbeamercolor{structure}{fg=mycolor}
+\usefonttheme{structurebold}
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{blackboard.jpg}}
+
+\usepackage{color}
+\definecolor{my_yellow}{rgb}{0.96,1.00,0.49}
+\end_preamble
+\use_default_options true
+\language brazilian
+\inputencoding auto
+\font_roman default
+\font_sans helvet
+\font_typewriter default
+\font_default_family sfdefault
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Inversão 3D de dados de 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+gradiometria gravimétrica
+\end_layout
+
+\begin_layout Author
+
+\lang english
+Leonardo Uieda
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+Valéria C.
+ F.
+ Barbosa
+\end_layout
+
+\begin_layout Date
+
+\lang english
+8 de Setembro de 2010
+\end_layout
+
+\begin_layout BeginFrame
+Sumário
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Introdução
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Introdução
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Introdução
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1->
+\end_layout
+
+\end_inset
+
+
+\size large
+Recentes avanços em gradiometria gravimétrica
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size large
+Sensores FTG
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size large
+F
+\series default
+ull 
+\series bold
+T
+\series default
+ensor 
+\series bold
+G
+\series default
+radiometer
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size large
+Mede 5 componentes independentes
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+
+\size large
+Empregado em mineração
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+
+\size large
+GOCE
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Introdução
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Este projeto: 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size large
+Inversão 3D de dados FTG 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size large
+Adaptar metodologias de gravimetria: 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<4->
+\end_layout
+
+\end_inset
+
+
+\size large
+Li e Oldenburg (1998) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<5->
+\end_layout
+
+\end_inset
+
+
+\size large
+Last e Kubic (1983) 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<6->
+\end_layout
+
+\end_inset
+
+
+\size large
+Silva Dias et al.
+ (2009)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Formulação Matemática
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Formulação Matemática
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+Tensor Gradiente Gravitacional
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Matriz Hessiana do potencial gravitacional 
+\begin_inset Formula $V$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{\bar{\Gamma}}=\begin{pmatrix}g_{xx} & g_{xy} & g_{xz}\\
+g_{yx} & g_{yy} & g_{yz}\\
+g_{zx} & g_{zy} & g_{zz}\end{pmatrix}=\begin{pmatrix}\dfrac{\partial^{2}V}{\partial x^{2}} & \dfrac{\partial^{2}V}{\partial x\partial y} & \dfrac{\partial^{2}V}{\partial x\partial z}\\[4mm]
+\dfrac{\partial^{2}V}{\partial y\partial x} & \dfrac{\partial^{2}V}{\partial y^{2}} & \dfrac{\partial^{2}V}{\partial y\partial z}\\[4mm]
+\dfrac{\partial^{2}V}{\partial z\partial x} & \dfrac{\partial^{2}V}{\partial z\partial y} & \dfrac{\partial^{2}V}{\partial z^{2}}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Fora das massas
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+
+\lang english
+6 cm
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\bar{\mathbf{g}}=-\bar{\nabla}V$
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\bar{\nabla}\times\bar{\mathbf{g}}=\bar{0}\quad\bar{\nabla}\cdot\bar{\mathbf{g}}=0$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size large
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\dfrac{\partial^{2}V}{\partial x\partial y}=\dfrac{\partial^{2}V}{\partial y\partial x}$
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dfrac{\partial^{2}V}{\partial x\partial z}=\dfrac{\partial^{2}V}{\partial z\partial x}$
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dfrac{\partial^{2}V}{\partial y\partial z}=\dfrac{\partial^{2}V}{\partial z\partial y}$
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\dfrac{\partial^{2}V}{\partial x^{2}}+\dfrac{\partial^{2}V}{\partial y^{2}}+\dfrac{\partial^{2}V}{\partial z^{2}}=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Column
+
+\lang english
+6 cm
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<2->
+\end_layout
+
+\end_inset
+
+
+\size large
+
+\begin_inset Formula $\bar{\bar{\Gamma}}$
+\end_inset
+
+ é simétrico
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<3->
+\end_layout
+
+\end_inset
+
+
+\size large
+5 componentes independentes
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Cada componente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+g_{ij}=\rho G\int_{\Omega}K_{ij}\ d\Omega\]
+
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+No caso 
+\begin_inset Formula $\Omega=\text{Prisma Retangular}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Fórmulas analíticas de Nagy 
+\shape italic
+et al.
+
+\shape default
+ (2000)
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+Inversão
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Graphics
+	filename grid1.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $\bar{\bar{\Gamma}}$
+\end_inset
+
+ medido em N pontos
+\size default
+ 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\bar{\bar{\Gamma}}_{i}^{^{obs}}$
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Agrupado em vetor de dados 
+\series bold
+\shape italic
+observados
+\series default
+\shape default
+ (5N x 1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{d}^{^{obs}}=\left[\begin{array}{c}
+\bar{\bar{\Gamma}}_{1}^{^{obs}}\\
+\bar{\bar{\Gamma}}_{2}^{^{obs}}\\
+\vdots\\
+\bar{\bar{\Gamma}}_{N}^{^{obs}}\end{array}\right]=\left[\begin{array}{c}
+g_{xy}{}_{1}^{^{obs}}\\
+g_{xy}{}_{2}^{^{obs}}\\
+\vdots\\
+g_{xy}{}_{N}^{^{obs}}\\
+g_{xz}{}_{1}^{^{obs}}\\
+\vdots\\
+g_{zz}{}_{N}^{^{obs}}\end{array}\right]_{5N\times1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Graphics
+	filename grid2.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\size large
+\begin_inset Graphics
+	filename grid3.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $\bar{\bar{\Gamma}}$
+\end_inset
+
+ devido aos M prismas 
+\begin_inset Formula $\Longrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\bar{\bar{\Gamma}}_{i}^{^{calc}}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Agrupado em vetor de dados 
+\series bold
+\shape italic
+calculados
+\series default
+\shape default
+ (5N x 1)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{d}^{^{calc}}(\bar{m})=\left[\begin{array}{c}
+\bar{\bar{\Gamma}}_{1}^{^{calc}}\\
+\bar{\bar{\Gamma}}_{2}^{^{calc}}\\
+\vdots\\
+\bar{\bar{\Gamma}}_{N}^{^{calc}}\end{array}\right]=\left[\begin{array}{c}
+g_{xy}{}_{1}^{^{calc}}\\
+g_{xy}{}_{2}^{^{calc}}\\
+\vdots\\
+g_{xy}{}_{N}^{^{calc}}\\
+g_{xz}{}_{1}^{^{calc}}\\
+\vdots\\
+g_{zz}{}_{N}^{^{calc}}\end{array}\right]_{5N\times1}\qquad\bar{m}=\left[\begin{array}{c}
+\Delta\rho_{1}\\
+\Delta\rho_{2}\\
+\vdots\\
+\Delta\rho_{M}\end{array}\right]_{M\times1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Função Objetivo:
+\end_layout
+
+\begin_layout Standard
+
+\size large
+\begin_inset Formula \[
+\phi=\phi^{^{ajuste}}+\sum_{l}\phi_{l}^{^{reg}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi^{^{ajuste}}=||\bar{d}^{^{obs}}-\bar{d}^{^{calc}}(\bar{m})||_{_{2}}^{^{2}}\]
+
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Qual 
+\begin_inset Formula $\bar{m}$
+\end_inset
+
+ que minimiza 
+\begin_inset Formula $\phi$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Funções Regularizadoras:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Li e Oldenburg (1998)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi^{^{reg}}=\mu\bar{m}^{T}\bar{\bar{W}}^{T}\bar{\bar{R}}^{T}\bar{\bar{R}}\bar{\bar{W}}\bar{m}\]
+
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{\bar{W}}=\left(\begin{array}{cccc}
+w_{1} & 0 & \cdots & 0\\
+0 & w_{2} & \cdots & 0\\
+\cdots & \cdots & \ddots & \vdots\\
+0 & 0 & \cdots & w_{M}\end{array}\right)_{M\times M}\qquad w_{k}=\left[\dfrac{1}{(z+z_{0})^{\frac{\beta}{2}}}\right]^{\frac{1}{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Formulação Matemática
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Funções Regularizadoras:
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Last e Kubic (1983)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi^{^{reg}}=\mu\bar{m}^{T}\bar{\bar{W}}\bar{m}\]
+
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\bar{\bar{W}}=\left(\begin{array}{cccc}
+w_{1} & 0 & \cdots & 0\\
+0 & w_{2} & \cdots & 0\\
+\cdots & \cdots & \ddots & \vdots\\
+0 & 0 & \cdots & w_{M}\end{array}\right)_{M\times M}\qquad w_{k}=\dfrac{1}{m_{k}^{2}+\epsilon}\]
+
+\end_inset
+
+
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Regularizador não-linear: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Minimizar 
+\begin_inset Formula $\phi$
+\end_inset
+
+ com método iterativo
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Resultados Preliminares
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Resultados Preliminares:
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[30pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size huge
+Aplicação a dados sintéticos
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Modelo sintético:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Cubo de 200 m de aresta
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+\begin_inset Formula $\Delta\rho=1\ g\cdot cm^{-3}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Ruído gaussiano de 5%
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Diferentes profundidades
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+0 m, 200 m, 300 m, 500 m
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Profundidade = 0 m
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-0-200/dados.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998): 
+\begin_inset Formula $\sigma_{max}=0.047\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-0-200/tk-cut.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983): 
+\begin_inset Formula $\sigma_{max}=0.16\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-0-200/cpt-cut.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-0-200/tk-thresh-0dot3-2.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-0-200/cpt-thresh-0dot3.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Profundidade = 200 m
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-200-400/dados.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998): 
+\begin_inset Formula $\sigma_{max}=0.0084\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-200-400/tk-cut.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983): 
+\begin_inset Formula $\sigma_{max}=0.053\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-200-400/cpt-cut.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-200-400/tk-thresh-half.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-200-400/cpt-thresh-half.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Profundidade = 300 m
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-300-500/dados.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998): 
+\begin_inset Formula $\sigma_{max}=0.0064\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-300-500/tk-cut-noscale.png
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983): 
+\begin_inset Formula $\sigma_{max}=0.058\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-300-500/cpt-cut.png
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-300-500/tk-thresh-half.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-300-500/cpt-thresh-half.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Profundidade = 500 m
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-500-700/dados.png
+	scale 33
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998): 
+\begin_inset Formula $\sigma_{max}=0.0083\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-500-700/tk-cut.png
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983): 
+\begin_inset Formula $\sigma_{max}=0.068\ g\cdot cm^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-500-700/cpt-cut.png
+	scale 31
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Resultados Preliminares
+\end_layout
+
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Li e Oldenburg (1998)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-500-700/tk-thresh-half.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Column
+6 cm
+\end_layout
+
+\begin_layout Standard
+\align center
+Last e Kubic (1983)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename depth-500-700/cpt-thresh-half.png
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsTopAligned
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Section
+Cronograma
+\end_layout
+
+\begin_layout BeginFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size giant
+Cronograma
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Cronograma
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Disciplinas:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Presente - Dezembro 2010
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size large
+Dissertação:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Presente - Julho 2011: Desenvolvimento
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\size large
+Implementar Silva Dias 
+\shape italic
+et al.
+
+\shape default
+ (2009)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size large
+Aplicações
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\size large
+Julho 2011 - Dezembro 2011: Escrever dissertação
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Referências
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Last B.
+ J., Kubik K., 1983.
+ Compact gravity inversion.
+ 
+\shape italic
+Geophysics
+\shape default
+, 48 (6), pp.
+ 713-721 
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Li Y., Oldenburg D.
+ W., 1998.
+ 3D inversion of gravity data.
+ 
+\shape italic
+Geophysics
+\shape default
+, 63 (1), pp.
+ 109-119 
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Nagy D., Papp G., Benedek J., 2000.
+ The gravitational potential and its derivatives for the prism.
+ 
+\shape italic
+Journal of Geodesy
+\shape default
+, 74, pp.
+ 552-560
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\size small
+Silva Dias F.
+ J.
+ S., Barbosa V.
+ C.
+ F., Silva J.
+ B.
+ C., 2009.
+ 3D gravity inversion through an adaptative learning procedure.
+ 
+\shape italic
+Geophysics
+\shape default
+, 74 (3), pp.
+ I9-I21 
+\size large
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+
+\backslash
+[10pt]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document
